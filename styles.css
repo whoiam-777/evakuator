@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+/* Сброс и базовые стили */
 * {
   margin: 0;
   padding: 0;
@@ -7,279 +6,218 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
-  color: #222;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: #f4f4f4;
   line-height: 1.6;
-  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  animation: fadeIn 1.2s ease forwards;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* Хедер */
 .header {
-  background: #004aad;
-  color: #fff;
-  padding: 40px 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 20px 0;
   text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 74, 173, 0.4);
-  margin-bottom: 50px;
-  user-select: none;
-  animation: slideDown 1s ease forwards;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 12px;
-  letter-spacing: 1.2px;
-  text-shadow: 1px 2px 6px rgba(0,0,0,0.3);
-}
-
-.header .phone {
-  font-size: 1.5rem;
-  margin-bottom: 25px;
-}
-
-.header .phone a {
-  color: #ffdb58;
-  text-decoration: none;
+.logo {
+  font-size: 28px;
   font-weight: 700;
-  transition: color 0.3s ease;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
-.header .phone a:hover {
-  color: #ffd633;
+.phone {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.phone a {
+  color: #1abc9c;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .btn {
-  padding: 16px 36px;
-  border-radius: 40px;
+  padding: 14px 28px;
+  border-radius: 30px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 18px;
   text-decoration: none;
-  color: #fff;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  color: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
   user-select: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  animation: btnFadeIn 1.5s ease forwards;
-}
-
-@keyframes btnFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .call-btn {
-  background: linear-gradient(45deg, #28a745, #218838);
-  box-shadow: 0 10px 20px rgba(40, 167, 69, 0.6);
+  background: #e74c3c;
+  border: 2px solid #c0392b;
 }
 
 .call-btn:hover {
-  background: linear-gradient(45deg, #218838, #1e7e34);
-  box-shadow: 0 12px 30px rgba(30, 126, 52, 0.7);
-  transform: translateY(-4px);
+  background: #c0392b;
+  box-shadow: 0 8px 20px #c0392b;
 }
 
 .whatsapp-btn {
-  background: linear-gradient(45deg, #25d366, #1ebe5d);
-  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.6);
+  background: #25d366;
+  border: 2px solid #1ebe5d;
 }
 
 .whatsapp-btn:hover {
-  background: linear-gradient(45deg, #1ebe5d, #159e40);
-  box-shadow: 0 12px 30px rgba(21, 158, 64, 0.7);
-  transform: translateY(-4px);
+  background: #1ebe5d;
+  box-shadow: 0 8px 20px #1ebe5d;
 }
 
+/* Основной контент */
+.main {
+  flex-grow: 1;
+  padding: 30px 0;
+}
+
+/* Секции */
 .areas, .gallery {
-  background: #fff;
-  padding: 35px 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: 0 auto 60px auto;
-  animation: fadeInUp 1.3s ease forwards;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
-.areas h2, .gallery h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  color: #004aad;
-  border-bottom: 4px solid #004aad;
-  padding-bottom: 10px;
-  user-select: none;
-}
-
+/* Список районов */
 .areas ul {
   list-style: none;
-  font-size: 1.2rem;
-  color: #444;
 }
 
 .areas li {
-  margin-bottom: 18px;
-  padding-left: 32px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  padding-left: 20px;
   position: relative;
-  line-height: 1.4;
+  color: #bdc3c7;
 }
 
 .areas li::before {
-  content: '📍';
+  content: "•";
+  color: #1abc9c;
   position: absolute;
   left: 0;
-  top: 2px;
-  font-size: 1.4rem;
+  font-size: 24px;
   line-height: 1;
+  top: 3px;
 }
 
-.gallery p {
-  color: #666;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 28px;
-  user-select: none;
-}
-
+/* Галерея */
 .gallery-images {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.gallery img {
-  max-width: 280px;
-  width: 100%;
+.gallery-images img {
+  width: 30%;
+  min-width: 150px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  animation: imgFadeIn 1.6s ease forwards;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.25);
+.gallery-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
 }
 
-@keyframes imgFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
+/* Футер */
 .footer {
+  background: rgba(0,0,0,0.6);
+  padding: 15px 0;
   text-align: center;
-  color: #555;
-  font-size: 0.95rem;
-  padding: 18px 12px;
-  border-top: 1px solid #ccc;
-  margin-top: auto;
-  user-select: none;
-  background: #f9f9f9;
-  border-radius: 0 0 15px 15px;
+  font-size: 14px;
+  color: #ccc;
+  box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
 }
 
-/* Адаптив для мобильных */
+.footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* Анимации плавного появления */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+/* Адаптивность под мобильные */
 @media (max-width: 768px) {
-  .header h1 {
-    font-size: 2.2rem;
+  .gallery-images {
+    flex-direction: column;
+    align-items: center;
   }
-  .header .phone {
-    font-size: 1.3rem;
+  .gallery-images img {
+    width: 80%;
+    max-width: 300px;
   }
   .btn {
-    padding: 14px 28px;
-    font-size: 1rem;
+    padding: 12px 24px;
+    font-size: 16px;
   }
-  .areas, .gallery {
-    padding: 25px 20px;
-    margin-bottom: 40px;
+  .phone {
+    font-size: 18px;
   }
-  .areas h2, .gallery h2 {
-    font-size: 1.6rem;
+  h2 {
+    font-size: 20px;
   }
-  .areas ul {
-    font-size: 1rem;
-  }
-  .gallery img {
-    max-width: 90vw;
+  .areas li {
+    font-size: 16px;
   }
 }
 
-@media (max-width: 480px) {
-  .header h1 {
-    font-size: 1.8rem;
-  }
-  .header .phone {
-    font-size: 1.1rem;
-  }
+@media (max-width: 400px) {
   .buttons {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
   .btn {
     width: 100%;
     text-align: center;
-    padding: 14px 0;
-    font-size: 1.1rem;
-  }
-  .areas ul {
-    padding-left: 20px;
-  }
-  .gallery img {
-    max-width: 100%;
-    margin: 0 auto;
   }
 }
