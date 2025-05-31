@@ -1,3 +1,6 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +8,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #0C4DA2 0%, #2E86C1 100%);
   color: #222;
   line-height: 1.6;
   padding: 20px;
@@ -15,22 +18,15 @@ body {
   flex-direction: column;
 }
 
-.container-header {
-  max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 15px;
-}
-
 .header {
-  background: #e63946;
-  color: #fff;
+  background: #0C4DA2; /* насыщенный синий */
+  color: #FFD700; /* яркий желтый */
   padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(230,57,70,0.4);
-  animation: fadeInDown 1s ease forwards;
   text-align: center;
-  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(12,77,162,0.5);
+  animation: fadeInDown 1s ease forwards;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header h1 {
@@ -43,15 +39,15 @@ body {
   font-size: 20px;
   margin-bottom: 15px;
   animation: fadeInUp 1.4s ease forwards;
+  font-weight: 700;
 }
 
 .header .phone a {
-  color: #fff;
+  color: #FFD700;
   text-decoration: none;
-  font-weight: 600;
 }
 
-.nav {
+.buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -68,78 +64,72 @@ body {
   transition: background 0.3s, transform 0.2s;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
   user-select: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .call-btn {
-  background-color: #b21f1f;
-  color: #fff;
+  background-color: #FFD700;
+  color: #0C4DA2;
+  font-weight: 800;
 }
 
 .call-btn:hover {
-  background-color: #8c1a1a;
+  background-color: #e6c200;
   transform: scale(1.05);
 }
 
 .whatsapp-btn {
-  background-color: #25d366;
-  color: #fff;
+  background-color: #0C4DA2;
+  color: #FFD700;
+  font-weight: 800;
+  border: 2px solid #FFD700;
 }
 
 .whatsapp-btn:hover {
-  background-color: #1ebe5d;
+  background-color: #084f87;
+  color: #fff;
   transform: scale(1.05);
 }
 
-.areas, .gallery, .advantages {
-  max-width: 1100px;
-  margin: 30px auto 0 auto;
+.areas, .gallery {
+  margin-top: 30px;
   background: #fff;
   padding: 25px 20px;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   animation: fadeIn 2s ease forwards;
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
 }
 
-.areas h2, .gallery h2, .advantages h2 {
+.areas h2, .gallery h2 {
   margin-bottom: 15px;
   font-size: 22px;
-  color: #b21f1f;
+  color: #0C4DA2;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.areas p, .advantages ul {
+.areas p {
   margin-bottom: 15px;
   font-weight: 600;
   color: #333;
 }
 
-.areas ul, .advantages ul {
+.areas ul {
   list-style: none;
-  padding-left: 0;
 }
 
-.areas li, .advantages li {
+.areas li {
   margin-bottom: 12px;
-  padding-left: 30px;
+  padding-left: 10px;
   font-size: 18px;
   position: relative;
 }
 
 .areas li::before {
   content: "✔";
-  color: #e63946;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: bold;
-}
-
-.advantages li::before {
-  content: "✔";
-  color: #e63946;
+  color: #FFD700;
   position: absolute;
   left: 0;
   top: 0;
@@ -152,15 +142,16 @@ body {
 }
 
 .footer {
-  max-width: 1100px;
-  margin: 30px auto 0 auto;
+  margin-top: auto;
   text-align: center;
   color: #444;
   font-size: 14px;
   padding: 15px 0 5px 0;
   user-select: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* Анимации */
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -192,11 +183,25 @@ body {
   }
 }
 
-.burger {
-  position: absolute;
-  right: 20px;
-  top: 35px;
-  width: 30px;
-  height: 22px;
-  display: none;
+/* Адаптивность */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  .header h1 {
+    font-size: 22px;
+  }
+  .header .phone {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .areas h2, .gallery h2 {
+    font-size: 18px;
+  }
+  .areas li {
+    font-size: 16px;
+  }
 }
