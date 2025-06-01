@@ -1,376 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> <link rel="icon" type="image/jpeg" href="favicon.jpg" />
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Эвакуатор Астана Круглосуточно</title>
-<style>
-  /* Стили шрифта */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
-
-  body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #0C4DA2; /* синий флаг КЗ */
-    color: #FFD700; /* жёлтый */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  header {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .language-switcher {
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-weight: 700;
-    font-size: 1rem;
-  }
-
-  .language-switcher label {
-    color: #FFD700;
-    align-self: center;
-  }
-
-  .language-switcher select {
-    padding: 5px 10px;
-    border-radius: 6px;
-    border: none;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    background-color: #0C4DA2;
-    color: #FFD700;
-    box-shadow: 0 0 6px rgba(12,77,162,0.7);
-    outline: none;
-    transition: background-color 0.3s;
-  }
-
-  .language-switcher select:hover,
-  .language-switcher select:focus {
-    background-color: #084f87;
-  }
-
-  .header h1 {
-    margin: 0;
-    font-size: 2rem;
-    text-shadow: 1px 1px 2px #003366;
-  }
-
-  .header .phone a {
-    color: #FFD700;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-  }
-
-  main {
-    flex: 1;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin: 25px 0;
-  }
-
-  .call-btn, .whatsapp-btn {
-    background-color: #FFD700;
-    color: #0C4DA2;
-    border: none;
-    padding: 12px 25px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .call-btn:hover, .whatsapp-btn:hover {
-    background-color: #e6c200;
-  }
-
-  section {
-    margin-bottom: 35px;
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-bottom: 12px;
-    text-shadow: 1px 1px 2px #003366;
-  }
-
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  ul li::before {
-    content: "•";
-    color: #FFD700;
-    font-weight: 700;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-  }
-
-  footer {
-    background-color: #084f87;
-    color: #FFD700;
-    text-align: center;
-    padding: 15px 10px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: inset 0 2px 5px rgba(255,215,0,0.3);
-  }
-</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Круглосуточные услуги эвакуатора в Астане и регионах. Быстрый выезд, доступные цены. Звоните: +7 702 590 8935" />
+	<title>Эвакуатор Астана Круглосуточно — Быстро и Надежно</title>
+	
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700" rel="stylesheet" />
 </head>
 <body>
 
-<header class="header">
-  <div class="language-switcher">
-    <label for="lang-select">Язык:</label>
-    <select id="lang-select" aria-label="Выбор языка">
-      <option value="ru" selected>Русский</option>
-      <option value="kk">Қазақша</option>
-      <option value="en">English</option>
-      <option value="tr">Türkçe</option>
-      <option value="az">Azərbaycan</option>
-      <option value="uz">O‘zbekcha</option>
-      <option value="zh">中文</option>
-    </select>
-  </div>
-  <h1>Эвакуатор Астана Круглосуточно</h1>
-  <p class="phone">📞 <a href="tel:+77025908935">+7 702 590 8935</a></p>
-</header>
+<nav class="navbar navbar-expand-lg navbar-light">
+	<a class="navbar-brand" href="index.html"><p>Эвакуатор Астана Круглосуточно</p></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+	        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#uslugi">Наши услуги</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#zakaz">Заказать эвакуатор</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#about">О компании</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+	    </ul>
+	</div>
+</nav>
 
-<main>
-  <div class="buttons">
-    <a href="tel:+77025908935" class="call-btn">Позвонить</a>
-    <a href="https://wa.me/77025908935" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
-  </div>
+<div class="top-menu">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="phoneLine">
+					<img src="img/phone-icon.png" alt="Телефон" />
+					<a class="phoneNum" href="tel:+77025908935">+7 (702) 590-89-35</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-  <section class="areas">
-    <h2>Обслуживаемые районы</h2>
-    <p>Мы предоставляем услуги эвакуатора в Астане и близлежащих районах круглосуточно, быстро и по доступным ценам.</p>
-    <ul>
-      <li>Акмолинская область (Астана, Косшы, Коянды, Ильинка, Малиновка и др.)</li>
-      <li>Карагандинская область (Караганда, Темиртау и др.)</li>
-      <li>Северо-Казахстанская область (до Петропавловска)</li>
-      <li>Павлодарская область (в пределах 250 км)</li>
-      <li>Щучинск, Бурабай, Атбасар, Степногорск, Ерейментау, Макинск, Арыкбалык и другие</li>
-    </ul>
-  </section>
+<div class="bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 bg-block1">
+				<h1>Эвакуатор в Астане и регионах Акмолинской, Карагандинской, Северо-Казахстанской и Павлодарской областей</h1>
+				<ul class="ul-bg">
+					<li class="li-bg"><p class="p-bg">- Выезд в Косшы, Коянды, Ильинку и Малиновку</p></li>
+					<li class="li-bg"><p class="p-bg">- Работаем 24/7, подача техники от 10 минут</p></li>
+					<li class="li-bg"><p class="p-bg">- Оказываем услуги в Караганде, Темиртау, Атбасаре и других городах</p></li>
+				</ul>
+				<a href="tel:+77025908935"><button class="bgbut">Позвонить</button></a>
+				<a href="tel:+77025908935"><button class="bg-mob">Позвонить</button></a>
+			</div>
+		</div>
+	</div>
+</div>
 
-  <section class="gallery">
-    <h2>Наши эвакуаторы</h2>
-    <p>Здесь будут фотографии. Вы можете добавить свои изображения позже.</p>
-  </section>
-</main>
+<div class="uslugi" id="uslugi">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title"><h2>Наши услуги</h2></div>
+			</div>
+		</div>
 
-<footer class="footer">
-  <p>© 2025 Эвакуатор Астана. Все права защищены.</p>
-  <p>Позвонить: +7 702 590 8935</p>
-</footer>
+		<div class="row row-uslugi">
+			<div class="col-md-3 uslugi-block">
+				<div class="uslugi-block-img1"></div>
+				<h3>Срочная эвакуация техники</h3>
+				<a href="tel:+77025908935"><button class="bgbut">Позвонить</button></a>
+				<a href="tel:+77025908935"><button class="but-usl-mob">Позвонить</button></a>
+			</div>
 
-<script>
-const translations = {
-  ru: {
-    headerTitle: "Эвакуатор Астана Круглосуточно",
-    phoneText: "📞 ",
-    callBtn: "Позвонить",
-    whatsappBtn: "Написать в WhatsApp",
-    areasTitle: "Обслуживаемые районы",
-    areasDesc: "Мы предоставляем услуги эвакуатора в Астане и близлежащих районах круглосуточно, быстро и по доступным ценам.",
-    areasList: [
-      "Акмолинская область (Астана, Косшы, Коянды, Ильинка, Малиновка и др.)",
-      "Карагандинская область (Караганда, Темиртау и др.)",
-      "Северо-Казахстанская область (до Петропавловска)",
-      "Павлодарская область (в пределах 250 км)",
-      "Щучинск, Бурабай, Атбасар, Степногорск, Ерейментау, Макинск, Арыкбалык и другие"
-    ],
-    galleryTitle: "Наши эвакуаторы",
-    galleryDesc: "Здесь будут фотографии. Вы можете добавить свои изображения позже.",
-    footerText1: "© 2025 Эвакуатор Астана. Все права защищены.",
-    footerText2: "Позвонить: +7 702 590 8935"
-  },
-  kk: {
-    headerTitle: "Астана қаласындағы эвакуатор",
-    phoneText: "📞 ",
-    callBtn: "Қоңырау шалу",
-    whatsappBtn: "WhatsApp-та жазу",
-    areasTitle: "Қызмет көрсетілетін аймақтар",
-    areasDesc: "Біз Астана және жақын маңдағы аудандарда тәулік бойы эвакуатор қызметін ұсынамыз, жылдам және қолжетімді бағамен.",
-    areasList: [
-      "Ақмола облысы (Астана, Қосшы, Қоянды, Ильинка, Малиновка және т.б.)",
-      "Қарағанды облысы (Қарағанды, Теміртау және т.б.)",
-      "Солтүстік Қазақстан облысы (Петропавлға дейін)",
-      "Павлодар облысы (250 км радиуста)",
-      "Щучинск, Бурабай, Атбасар, Степногорск, Ерейментау, Макинск, Арықбалық және басқалар"
-    ],
-    galleryTitle: "Біздің эвакуаторлар",
-    galleryDesc: "Мұнда фотосуреттер болады. Кейін өзіңіздің суреттеріңізді қоса аласыз.",
-    footerText1: "© 2025 Астана эвакуаторы. Барлық құқықтар қорғалған.",
-    footerText2: "Қоңырау шалу: +7 702 590 8935"
-  },
-  en: {
-    headerTitle: "Astana Tow Truck 24/7",
-    phoneText: "📞 ",
-    callBtn: "Call Now",
-    whatsappBtn: "Message on WhatsApp",
-    areasTitle: "Service Areas",
-    areasDesc: "We provide tow truck services in Astana and nearby areas 24/7, fast and affordable.",
-    areasList: [
-      "Akmola Region (Astana, Kosshy, Koyandy, Ilinka, Malinovka, etc.)",
-      "Karaganda Region (Karaganda, Temirtau, etc.)",
-      "North Kazakhstan Region (up to Petropavlovsk)",
-      "Pavlodar Region (within 250 km radius)",
-      "Shchuchinsk, Burabay, Atbasar, Stepnogorsk, Ereymentau, Makinsk, Arykbalyk, and others"
-    ],
-    galleryTitle: "Our Tow Trucks",
-    galleryDesc: "Photos will be here. You can add your own images later.",
-    footerText1: "© 2025 Astana Tow Truck. All rights reserved.",
-    footerText2: "Call: +7 702 590 8935"
-  },
-  tr: {
-    headerTitle: "Astana Çekici 7/24 Hizmet",
-    phoneText: "📞 ",
-    callBtn: "Ara",
-    whatsappBtn: "WhatsApp'tan Yaz",
-    areasTitle: "Hizmet Bölgeleri",
-    areasDesc: "Astana ve çevresinde 7/24 çekici hizmeti sunuyoruz, hızlı ve uygun fiyatlı.",
-    areasList: [
-      "Akmola Bölgesi (Astana, Kosshy, Koyandy, Ilinka, Malinovka vb.)",
-      "Karaganda Bölgesi (Karaganda, Temirtau vb.)",
-      "Kuzey Kazakistan Bölgesi (Petropavlovsk'a kadar)",
-      "Pavlodar Bölgesi (250 km yarıçapında)",
-      "Shchuchinsk, Burabay, Atbasar, Stepnogorsk, Ereymentau, Makinsk, Arykbalyk ve diğerleri"
-    ],
-    galleryTitle: "Çekicilerimiz",
-    galleryDesc: "Burada fotoğraflar olacak. Kendi resimlerinizi daha sonra ekleyebilirsiniz.",
-    footerText1: "© 2025 Astana Çekici. Tüm hakları saklıdır.",
-    footerText2: "Ara: +7 702 590 8935"
-  },
-  az: {
-    headerTitle: "Astana Yük Maşını 24/7",
-    phoneText: "📞 ",
-    callBtn: "Zəng et",
-    whatsappBtn: "WhatsApp-da Yaz",
-    areasTitle: "Xidmət Əraziləri",
-    areasDesc: "Biz Astana və yaxın ərazilərdə 24/7 yük maşını xidmətləri təqdim edirik, sürətli və münasib qiymətlə.",
-    areasList: [
-      "Akmola Regionu (Astana, Kosshy, Koyandy, Ilinka, Malinovka və s.)",
-      "Karaganda Regionu (Karaganda, Temirtau və s.)",
-      "Şimali Qazaxıstan Regionu (Petropavlovska qədər)",
-      "Pavlodar Regionu (250 km radius daxilində)",
-      "Shchuchinsk, Burabay, Atbasar, Stepnogorsk, Ereymentau, Makinsk, Arykbalyk və s."
-    ],
-    galleryTitle: "Yük maşınlarımız",
-    galleryDesc: "Burada şəkillər olacaq. Öz şəkillərinizi daha sonra əlavə edə bilərsiniz.",
-    footerText1: "© 2025 Astana Yük Maşını. Bütün hüquqlar qorunur.",
-    footerText2: "Zəng et: +7 702 590 8935"
-  },
-  uz: {
-    headerTitle: "Astana Evakuator 24/7 Xizmat",
-    phoneText: "📞 ",
-    callBtn: "Qo'ng'iroq qilish",
-    whatsappBtn: "WhatsApp-da yozish",
-    areasTitle: "Xizmat ko'rsatiladigan hududlar",
-    areasDesc: "Biz Astana va yaqin atrofdagi hududlarda 24/7 evakuator xizmatlarini tez va arzon narxlarda taqdim etamiz.",
-    areasList: [
-      "Akmola viloyati (Astana, Kosshy, Koyandy, Ilinka, Malinovka va boshqalar)",
-      "Qarag‘andiy viloyati (Qarag‘anda, Temirtau va boshqalar)",
-      "Shimoliy Qozog‘iston viloyati (Petropavlovskgacha)",
-      "Pavlodar viloyati (250 km radius ichida)",
-      "Shchuchinsk, Burabay, Atbasar, Stepnogorsk, Ereymentau, Makinsk, Arykbalyk va boshqa joylar"
-    ],
-    galleryTitle: "Bizning evakuatorlar",
-    galleryDesc: "Bu yerda suratlar bo‘ladi. Keyinchalik o‘z suratlaringizni qo‘shishingiz mumkin.",
-    footerText1: "© 2025 Astana Evakuator. Barcha huquqlar himoyalangan.",
-    footerText2: "Qo'ng'iroq: +7 702 590 8935"
-  },
-  zh: {
-    headerTitle: "阿斯塔纳拖车 24小时服务",
-    phoneText: "📞 ",
-    callBtn: "拨打电话",
-    whatsappBtn: "WhatsApp消息",
-    areasTitle: "服务区域",
-    areasDesc: "我们在阿斯塔纳及周边地区提供24小时拖车服务，快速且价格合理。",
-    areasList: [
-      "阿克莫拉地区（阿斯塔纳，Kosshy，Koyandy，Ilinka，Malinovka等）",
-      "卡拉干达地区（卡拉干达，Temirtau等）",
-      "北哈萨克斯坦地区（至彼得罗巴甫洛夫斯克）",
-      "巴甫洛达尔地区（250公里范围内）",
-      "Shchuchinsk，Burabay，Atbasar，Stepnogorsk，Ereymentau，Makinsk，Arykbalyk等"
-    ],
-    galleryTitle: "我们的拖车",
-    galleryDesc: "这里将展示照片。您可以稍后添加自己的图片。",
-    footerText1: "© 2025 阿斯塔纳拖车。保留所有权利。",
-    footerText2: "电话：+7 702 590 8935"
-  }
-};
+			<div class="col-md-3 uslugi-block">
+				<div class="uslugi-block-img2"></div>
+				<h3>Эвакуатор межгород</h3>
+				<a href="tel:+77025908935"><button class="bgbut">Позвонить</button></a>
+				<a href="tel:+77025908935"><button class="but-usl-mob">Позвонить</button></a>
+			</div>
 
-const langSelect = document.getElementById('lang-select');
+			<div class="col-md-3 uslugi-block">
+				<div class="uslugi-block-img3"></div>
+				<h3>Погрузка любой сложности</h3>
+				<a href="tel:+77025908935"><button class="bgbut">Позвонить</button></a>
+				<a href="tel:+77025908935"><button class="but-usl-mob">Позвонить</button></a>
+			</div>
+		</div>
+	</div>
+</div>
 
-function updateLanguage(lang) {
-  const t = translations[lang];
-  if (!t) return;
+<div class="kons" id="zakaz">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Закажите эвакуацию Вашей техники</h2>
+				<a href="tel:+77025908935"><button class="but-usl1">Позвонить</button></a>
+				<a href="https://wa.me/77025908935" target="_blank"><button class="but-usl2">Написать в WhatsApp</button></a>
+			</div>
+		</div>
+	</div>
+</div>
 
-  // Заголовок
-  document.querySelector('.header h1').textContent = t.headerTitle;
+<div class="about" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title"><h2>О компании</h2></div>
+				<p>Мы оказываем профессиональные услуги эвакуатора в Астане и по всей Акмолинской, Карагандинской, Северо-Казахстанской и Павлодарской областям. Более 10 лет опыта, доступные цены и круглосуточная работа.</p>
+				<hr />
+				<h3>Мы эвакуируем:</h3>
+				<ul>
+					<li>Легковые автомобили</li>
+					<li>Технику с низкими бамперами</li>
+					<li>Погрузка и разгрузка любой сложности</li>
+					<li>Технику с заблокированными колесами</li>
+				</ul>
+				<hr />
+				<p>Мы работаем не только в Астане, но и в городах: Косшы, Коянды, Ильинка, Малиновка, Атбасар, Караганда, Темиртау и других населённых пунктах в радиусе 250 км.</p>
+			</div>
+		</div>
+	</div>
+</div>
 
-  // Телефон с иконкой
-  document.querySelector('.header .phone').innerHTML = `${t.phoneText}<a href="tel:+77025908935">+7 702 590 8935</a>`;
+<div class="contacts" id="contacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Контакты</h2>
+				<p>Есть вопросы? Звоните прямо сейчас по телефону:</p>
+				<div class="phoneLine">
+					<img src="img/phone-icon.png" alt="Телефон" />
+					<a class="phoneNum" href="tel:+77025908935">+7 (702) 590-89-35</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-  // Кнопки
-  document.querySelector('.call-btn').textContent = t.callBtn;
-  document.querySelector('.whatsapp-btn').textContent = t.whatsappBtn;
+<div class="call">
+	<a href="tel:+77025908935"><i class="fa fa-phone" aria-hidden="true"></i></a>
+</div>
 
-  // Обслуживаемые районы
-  document.querySelector('.areas h2').textContent = t.areasTitle;
-  document.querySelector('.areas p').textContent = t.areasDesc;
-
-  const areasList = document.querySelector('.areas ul');
-  areasList.innerHTML = '';
-  t.areasList.forEach(item => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    areasList.appendChild(li);
-  });
-
-  // Галерея
-  document.querySelector('.gallery h2').textContent = t.galleryTitle;
-  document.querySelector('.gallery p').textContent = t.galleryDesc;
-
-  // Футер
-  const footer = document.querySelector('.footer');
-  footer.innerHTML = `<p>${t.footerText1}</p><p>${t.footerText2}</p>`;
-}
-
-langSelect.addEventListener('change', () => {
-  updateLanguage(langSelect.value);
-});
-
-// Инициализация страницы с русским по умолчанию
-updateLanguage('ru');
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="magnific-popup/jquery.magnific-popup.js"></script>
 
 </body>
 </html>
