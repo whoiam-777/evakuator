@@ -1,207 +1,110 @@
-/* Подключение шрифтов */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
-
+/* Сброс стилей */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Основные стили */
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(135deg, #0C4DA2 0%, #2E86C1 100%);
-  color: #222;
-  line-height: 1.6;
-  padding: 20px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-.header {
-  background: #0C4DA2; /* насыщенный синий */
-  color: #FFD700; /* яркий желтый */
-  padding: 25px 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(12,77,162,0.5);
-  animation: fadeInDown 1s ease forwards;
-  font-family: 'Montserrat', sans-serif;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.header h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  animation: fadeInUp 1.2s ease forwards;
+/* Шапка */
+header {
+    background-color: #e63946;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
 }
 
-.header .phone {
-  font-size: 20px;
-  margin-bottom: 15px;
-  animation: fadeInUp 1.4s ease forwards;
-  font-weight: 700;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.header .phone a {
-  color: #FFD700;
-  text-decoration: none;
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  animation: fadeInUp 1.6s ease forwards;
+header .btn {
+    background-color: #f1faee;
+    color: #e63946;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.btn {
-  padding: 14px 26px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 18px;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  user-select: none;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
+header .btn:hover {
+    background-color: #f1faee;
+    color: #e63946;
 }
 
-.call-btn {
-  background-color: #FFD700;
-  color: #0C4DA2;
-  font-weight: 800;
+/* Разделы */
+section {
+    padding: 40px 0;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.call-btn:hover {
-  background-color: #e6c200;
-  transform: scale(1.05);
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e63946;
 }
 
-.whatsapp-btn {
-  background-color: #0C4DA2;
-  color: #FFD700;
-  font-weight: 800;
-  border: 2px solid #FFD700;
+.service {
+    margin-bottom: 20px;
 }
 
-.whatsapp-btn:hover {
-  background-color: #084f87;
-  color: #fff;
-  transform: scale(1.05);
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.areas, .gallery {
-  margin-top: 30px;
-  background: #fff;
-  padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  animation: fadeIn 2s ease forwards;
-  font-family: 'Open Sans', sans-serif;
-  color: #222;
+.service p {
+    font-size: 1rem;
+    color: #555;
 }
 
-.areas h2, .gallery h2 {
-  margin-bottom: 15px;
-  font-size: 22px;
-  color: #0C4DA2;
-  font-family: 'Montserrat', sans-serif;
+/* Контакты */
+#contacts p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.areas p {
-  margin-bottom: 15px;
-  font-weight: 600;
-  color: #333;
+#contacts .btn {
+    background-color: #f1faee;
+    color: #e63946;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-.areas ul {
-  list-style: none;
+#contacts .btn:hover {
+    background-color: #f1faee;
+    color: #e63946;
 }
 
-.areas li {
-  margin-bottom: 12px;
-  padding-left: 10px;
-  font-size: 18px;
-  position: relative;
-}
-
-.areas li::before {
-  content: "✔";
-  color: #FFD700;
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-weight: bold;
-}
-
-.gallery p {
-  color: #555;
-  font-style: italic;
-}
-
-.footer {
-  margin-top: auto;
-  text-align: center;
-  color: #444;
-  font-size: 14px;
-  padding: 15px 0 5px 0;
-  user-select: none;
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* Анимации */
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Адаптивность */
-@media (max-width: 480px) {
-  body {
-    padding: 15px;
-  }
-  .header h1 {
-    font-size: 22px;
-  }
-  .header .phone {
-    font-size: 16px;
-  }
-  .btn {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-  .areas h2, .gallery h2 {
-    font-size: 18px;
-  }
-  .areas li {
-    font-size: 16px;
-  }
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
 }
